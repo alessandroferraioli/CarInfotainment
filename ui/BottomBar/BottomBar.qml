@@ -7,8 +7,8 @@ Rectangle {
         left: parent.left
         right: parent.right
     }
-    color: "black"
-    height: parent.height*0.1
+    color: "#212121"
+    height: parent.height*0.07
 
 
 }
