@@ -15,7 +15,9 @@ qt_add_executable(appCarInfotainment
 qt_add_qml_module(appCarInfotainment
     URI CarInfotainment
     VERSION 1.0
-    QML_FILES Main.qml
+    QML_FILES
+        Main.qml
+        ui/BottomBar/BottomBar.qml
 )
 
 set_target_properties(appCarInfotainment PROPERTIES
