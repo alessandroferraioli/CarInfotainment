@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>ui/Images/car.png</file>
+        <file>ui/Images/lock.png</file>
+        <file>ui/Images/unlocked.png</file>
     </qresource>
 </RCC>

@@ -15,6 +15,7 @@ find_package(Qt6 COMPONENTS Qml)
 qt_add_executable(appCarInfotainment
     resources.qrc
     main.cpp
+    backend/HardwareControllers/lockcontroller.cpp
 )
 
 
@@ -33,6 +34,7 @@ qt_add_qml_module(appCarInfotainment
         Main.qml
         ui/BottomBar/BottomBar.qml
         ui/RightPanel/RightPanel.qml
+        ui/RightPanel/MapModule.qml
         ui/LeftPanel/LeftPanel.qml
 )
 
