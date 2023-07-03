@@ -1,0 +1,5 @@
+module CarInfotainment
+typeinfo appCarInfotainment.qmltypes
+prefer :/CarInfotainment/
+Main 1.0 Main.qml
+
