@@ -1,37 +1,31 @@
 import QtQuick
 import QtQuick.Window
 import "ui/BottomBar"
+import "ui/RightPanel"
+import "ui/LeftPanel"
+
+
 Window {
     width: 1240
     height: 800
     visible: true
-    title: qsTr("Hello World")
-    color: "green"
+    title: qsTr("Car Infotainment")
+    color: "white"
 
-    Rectangle{
-        id : rightPanel
-        anchors{
-            bottom:bottomBar.top
-            top:parent.top
-            right:parent.right
-        }
-        width:parent.width*0.5
-        color:"red"
+
+    RightPanel{
+        id: rightPanel
     }
-    Rectangle{
-        id : leftPanel
-        anchors{
-            bottom:bottomBar.top
-            top:parent.top
-            left:parent.left
-        }
-        width:parent.width*0.5
-        color:"blue"
+
+    LeftPanel{
+        id:leftPanel
     }
+
 
     BottomBar{
         id : bottomBar
     }
+
 
 
 }
