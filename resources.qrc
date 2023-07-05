@@ -3,5 +3,9 @@
         <file>ui/Images/car.png</file>
         <file>ui/Images/lock.png</file>
         <file>ui/Images/unlocked.png</file>
+        <file>ui/Images/decrease.png</file>
+        <file>ui/Images/increase.png</file>
+        <file>ui/Images/wifi.png</file>
+        <file>ui/Images/car-icon.png</file>
     </qresource>
 </RCC>

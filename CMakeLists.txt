@@ -16,6 +16,8 @@ qt_add_executable(appCarInfotainment
     resources.qrc
     main.cpp
     backend/HardwareControllers/lockcontroller.cpp
+    backend/HardwareControllers/clockcontroller.cpp
+    backend/HardwareControllers/coolingsystemcontroller.cpp
 )
 
 
@@ -35,6 +37,7 @@ qt_add_qml_module(appCarInfotainment
         ui/BottomBar/BottomBar.qml
         ui/RightPanel/RightPanel.qml
         ui/RightPanel/MapModule.qml
+        ui/RightPanel/SystemBar.qml
         ui/LeftPanel/LeftPanel.qml
 )
 

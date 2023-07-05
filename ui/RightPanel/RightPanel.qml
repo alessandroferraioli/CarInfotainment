@@ -15,36 +15,9 @@ Rectangle{
         id: mapModule
     }
 
-    Rectangle{
-        id:control_panel
-        color: "transparent"
-        anchors{
-            top:parent.top
-            left:parent.left
-            right:parent.right
-        }
-
-        height : parent.height*0.05
-
-        Image {
-            id: lock_unlock
-            source: (LockController.carLocked ?  "qrc:/ui/Images/lock.png" : "qrc:/ui/Images/unlocked.png")
-            anchors{
-                left:parent.left
-                top:parent.top
-                bottom:parent.bottom
-            }
-            width:height
-            anchors.margins: 5
-            fillMode: Image.PreserveAspectFit
-
-            MouseArea{
-                anchors.fill: parent
-                onClicked: {LockController.carLocked = !LockController.carLocked}
-            }
-        }
+    SystemBar{
+        id:system_panel
     }
-
 
 
 }
