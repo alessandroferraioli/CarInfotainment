@@ -10,5 +10,7 @@
         <file>ui/Images/search.png</file>
         <file>ui/Images/phone.png</file>
         <file>ui/Images/spotify.png</file>
+        <file>ui/Images/phone-onclick.png</file>
+        <file>ui/Images/phone-onhover.png</file>
     </qresource>
 </RCC>

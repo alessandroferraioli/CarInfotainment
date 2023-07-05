@@ -18,5 +18,6 @@ Rectangle{
             source: "qrc:/ui/Images/car.png"
         }
         fillMode: Image.PreserveAspectFit
+
     }
 }

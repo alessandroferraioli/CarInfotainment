@@ -18,6 +18,7 @@ qt_add_executable(appCarInfotainment
     backend/HardwareControllers/lockcontroller.cpp
     backend/HardwareControllers/clockcontroller.cpp
     backend/HardwareControllers/coolingsystemcontroller.cpp
+    backend/multimediacontroller.cpp
 )
 
 
