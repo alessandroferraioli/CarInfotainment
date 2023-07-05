@@ -7,5 +7,8 @@
         <file>ui/Images/increase.png</file>
         <file>ui/Images/wifi.png</file>
         <file>ui/Images/car-icon.png</file>
+        <file>ui/Images/search.png</file>
+        <file>ui/Images/phone.png</file>
+        <file>ui/Images/spotify.png</file>
     </qresource>
 </RCC>

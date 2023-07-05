@@ -15,11 +15,13 @@ int main(int argc, char *argv[])
     //Hardware Controllers
     LockController lock_controller;
     ClockController clock_controller;
-    CoolingSystemController cooling_system_controller;
+    CoolingSystemController driver_cooling_system_controller;
+    CoolingSystemController passenger_cooling_system_controller;
 
     QQmlContext* context(engine.rootContext());
     context->setContextProperty("LockController",&lock_controller);
-    context->setContextProperty("CoolingSystemController",&cooling_system_controller);
+    context->setContextProperty("DriverCoolingSystemController",&driver_cooling_system_controller);
+    context->setContextProperty("PassengerCoolingSystemController",&passenger_cooling_system_controller);
     context->setContextProperty("ClockController",&clock_controller);
 
 

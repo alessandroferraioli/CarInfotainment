@@ -8,6 +8,8 @@ Rectangle{
         left:parent.left
         right:parent.right
         topMargin: 5
+        leftMargin: 10
+
     }
 
     height : parent.height*0.05
@@ -48,69 +50,6 @@ Rectangle{
         color:"black"
     }
 
-    /*Cooling System Section
-    Rectangle{
-        id: cooling_system
-        anchors{
-            left :lock_unlock.right
-            top:parent.top
-            bottom:parent.bottom
-        }
-        width:parent.width*0.2
-        color:"transparent"
-        Image{
-            id: decrease_temperature
-            anchors{
-                left:parent.left
-                top:parent.top
-                bottom: parent.bottom
-                right:temperature_text.right
-                topMargin: 5
-                bottomMargin: 5
-            }
-            source : "qrc:/ui/Images/decrease.png"
-            width:height
-            fillMode: Image.PreserveAspectFit
-
-            MouseArea{
-                anchors.fill: parent
-                onClicked: {CoolingSystemController.referenceTemperature -=1}
-            }
-
-        }
-
-        Text{
-            id:temperature_text
-            anchors.centerIn: parent
-            text: CoolingSystemController.referenceTemperature+"°C"
-            font{
-                pixelSize:17
-                bold:true
-            }
-            color:"black"
-        }
-
-        Image{
-            id: increase_temperature
-            anchors{
-                right:parent.right
-                top:parent.top
-                bottom: parent.bottom
-                left:temperature_text.left
-                topMargin: 5
-                bottomMargin: 5
-            }
-
-            source : "qrc:/ui/Images/increase.png"
-            width:height
-            fillMode: Image.PreserveAspectFit
-
-            MouseArea{
-                anchors.fill: parent
-                onClicked: {CoolingSystemController.referenceTemperature +=1}
-            }
-        }
-    }
 
     Image{
         id:wifi
@@ -120,9 +59,10 @@ Rectangle{
         anchors{
             top:parent.top
             bottom: parent.bottom
-            left:cooling_system.right
+            left:time.right
+            leftMargin: 10
         }
 
     }
-    */
+
 }

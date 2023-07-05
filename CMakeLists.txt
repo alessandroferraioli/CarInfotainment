@@ -35,7 +35,10 @@ qt_add_qml_module(appCarInfotainment
     QML_FILES
         Main.qml
         ui/BottomBar/BottomBar.qml
+        ui/BottomBar/CoolingSystem.qml
+        ui/BottomBar/MultimediaBar.qml
         ui/RightPanel/RightPanel.qml
+        ui/RightPanel/SearchBar.qml
         ui/RightPanel/MapModule.qml
         ui/RightPanel/SystemBar.qml
         ui/LeftPanel/LeftPanel.qml

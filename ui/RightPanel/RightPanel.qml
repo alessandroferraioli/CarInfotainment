@@ -16,7 +16,17 @@ Rectangle{
     }
 
     SystemBar{
-        id:system_panel
+        id:systemPanel
+    }
+
+    SearchBar{
+        id: searchBar
+        anchors{
+            left:parent.left
+            top:systemPanel.bottom
+            topMargin: 2
+
+        }
     }
 
 
