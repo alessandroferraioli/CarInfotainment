@@ -12,5 +12,7 @@
         <file>ui/Images/spotify.png</file>
         <file>ui/Images/phone-onclick.png</file>
         <file>ui/Images/phone-onhover.png</file>
+        <file>ui/Images/mute.png</file>
+        <file>ui/Images/volume.png</file>
     </qresource>
 </RCC>

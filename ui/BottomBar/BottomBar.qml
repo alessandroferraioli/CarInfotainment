@@ -44,15 +44,27 @@ Rectangle {
        anchors{
            top:parent.top
            bottom: parent.bottom
-           right:parent.right
+           right:volume.left
            rightMargin: 5
        }
        width: parent.width*percentage_cooling_system_width
    }
 
+
+   Volume{
+       id:volume
+       anchors{
+           right:parent.right
+           top:parent.top
+           bottom: parent.bottom
+       }
+   }
+
     MultimediaBar{
         id: multimedia_bar
     }
+
+
 
 
 }
