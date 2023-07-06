@@ -5,6 +5,8 @@
 #include "backend/HardwareControllers/lockcontroller.h"
 #include "backend/HardwareControllers/coolingsystemcontroller.h"
 #include "backend/HardwareControllers/clockcontroller.h"
+#include "backend/HardwareControllers/soundcontroller.h"
+
 #include "backend/multimediacontroller.h"
 
 int main(int argc, char *argv[])
@@ -18,6 +20,8 @@ int main(int argc, char *argv[])
     ClockController clock_controller;
     CoolingSystemController driver_cooling_system_controller;
     CoolingSystemController passenger_cooling_system_controller;
+    SoundController sound_controller;
+
     MultimediaController multimedia_controller;
 
     QQmlContext* context(engine.rootContext());
@@ -26,6 +30,7 @@ int main(int argc, char *argv[])
     context->setContextProperty("PassengerCoolingSystemController",&passenger_cooling_system_controller);
     context->setContextProperty("ClockController",&clock_controller);
     context->setContextProperty("MultimediaController",&multimedia_controller);
+    context->setContextProperty("SoundController",&sound_controller);
 
 
     const QUrl url(u"qrc:/CarInfotainment/Main.qml"_qs);
